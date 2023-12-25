@@ -15,6 +15,29 @@ class UserController extends Controller
             'message' => count($users) . ' Users found',
             'data' => $users,
             'status' => true
-        ]);
+        ], 200);
+    }
+
+    public function show($id){
+
+        $user = User::find($id);
+
+        if($user != null){
+            
+            return response([
+                'message' => 'Record found',
+                'data' => $user,
+                'status' => true
+            ], 200);
+
+        }else{
+
+            return response([
+                'message' => 'Record Not found',
+                'data' => [],
+                'status' => true
+            ], 200);
+        }
+
     }
 }
