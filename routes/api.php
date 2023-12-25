@@ -25,3 +25,5 @@ Route::get('/demo',[DemoController::class,'index']);
 Route::get('/users',[UserController::class,'index']);
 
 Route::get('/users/{userId}',[UserController::class,'show']);
+
+Route::post('/users',[UserController::class,'store']);
