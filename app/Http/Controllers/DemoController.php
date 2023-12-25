@@ -15,6 +15,10 @@ class DemoController extends Controller
             [
                 'name' => 'Sanjay choudhary',
                 'email' => 'sanjay@gmail.com'
+            ],
+            [
+                'name' => 'Nayara choudhary',
+                'email' => 'nayara@gmail.com'
             ]
         ];
 
